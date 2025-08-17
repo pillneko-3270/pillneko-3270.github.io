@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title>药丸猫的个人网站</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #dd6f6f, #5d7bcf);
+            background-size: 200% 200%;
+            animation: color_spin 20s linear infinite;
+        }
+  
+        #dialog {
+            position: absolute;
+            width: 50%;
+            height: 40%;
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%)
+                        translateX(-50%);
+            background-color: #ffffff9c;
+            place-content: center;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px #0000002d;
+            h1 {
+                background-image: linear-gradient(to right, #bd5757, #4f6ab3);
+                color: transparent;
+                background-clip: text;
+            }
+        }
+
+        .s-sites {
+            text-align: center;
+            outline: none;
+            color: #dd6f6f;
+        }
+
+        .c {
+            color: #683b3b;
+        }
+
+        @keyframes color_spin {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="dialog">
+        <h1 align="center">网站正在施工中...</h1>
+        <div align="center">
+            <p class="c">很抱歉，由于网站才刚出生不久，一些东西没来得及搞上去</p>
+            <p class="c">不过你可以看看我的社交帐号↓</p>
+            <div id="socal">
+                <a href="https://space.bilibili.com/3546668689525310" class="s-sites">哔哩哔哩</a>
+                <a href="https://pillneko-3270.lofter.com/" class="s-sites">Lofter</a>
+            </div>
+        </p>
+        <div align="center">
+            <div>
+                <span>Made By</span>
+                <img src="avatar.png" width="30" height="30" style="border-radius: 100%; transform: translateY(10px);">
+                <span>PillNeko</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
