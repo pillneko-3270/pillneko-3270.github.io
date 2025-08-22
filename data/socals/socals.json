@@ -1,0 +1,16 @@
+{
+    "socals": [
+        {
+            "name": "哔哩哔哩",
+            "icon": "/data/socals/bilibili.svg",
+            "url": "https://space.bilibili.com/3546668689525310",
+            "id": "3546668689525310"
+        },
+        {
+            "name": "Lofter",
+            "icon": "/data/socals/lofter.svg",
+            "url": "https://pillneko-3270.lofter.com",
+            "id": "pillneko-3270"
+        }
+    ]
+}

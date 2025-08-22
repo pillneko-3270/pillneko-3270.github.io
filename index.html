@@ -1,88 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_CN" data-theme="pill-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.png" type="image/png">
-    <title>药丸猫的个人网站</title>
-    <style>
-        html {
-            width: 100%;
-            height: 100%;
-        }
-        body {
-            margin: 0px;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(to right, #dd6f6f, #5d7bcf);
-            background-size: 200% 200%;
-            animation: color_spin 20s linear infinite;
-        }
-  
-        #dialog {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            padding: 10px;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%)
-                        translateX(-50%);
-            background-color: #ffffff9c;
-            place-content: center;
-            border-radius: 15px;
-            box-shadow: 0px 0px 20px #0000002d;
-            h1 {
-                background-image: linear-gradient(to right, #bd5757, #4f6ab3);
-                color: transparent;
-                background-clip: text;
-                font-size: 5vh;
-            }
-        }
-
-        .s-sites {
-            text-align: center;
-            outline: none;
-            color: #dd6f6f;
-            font-size: 1.8vh;
-        }
-
-        .c {
-            color: #683b3b;
-            font-size: 2vh;
-        }
-
-        @keyframes color_spin {
-            0% {
-                background-position: 0% 0%;
-            }
-            50% {
-                background-position: 100% 100%;
-            }
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-    </style>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@700,1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/socal_card.css">
+    <title>Pillneko | 药丸猫 个人网站</title>
 </head>
 <body>
-    <div id="dialog">
-        <h1 align="center">网站正在施工中...</h1>
-        <div align="center">
-            <p class="c">很抱歉，由于网站才刚出生不久，一些东西没来得及搞上去</p>
-            <p class="c">不过你可以看看我的社交帐号↓</p>
-            <div id="socal">
-                <a href="https://space.bilibili.com/3546668689525310" class="s-sites">哔哩哔哩</a>
-                <a href="https://pillneko-3270.lofter.com/" class="s-sites">Lofter</a>
+    <nav class="nav-bar">
+        <div id="pill-cat">
+            <span class="text-nav">PillNeko</span>
+        </div>
+        <ul id="nav-ul">
+            <li><a href="#wel">欢迎</a></li>
+            <li><a href="#me">社交帐号</a></li>
+            <li><a href="#about-me">自设设定</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div class="blank" id="wel"></div>
+        <div id="con">
+            <div class="blank"></div>
+            <div id="head">
+                <h1 id="hello"></h1>
             </div>
-        </p>
-        <div align="center">
-            <div>
-                <span style="font-size: 2vh;">Made By</span>
-                <img src="avatar.png" style="border-radius: 100%; transform: translateY(0.3vh); width: 3vh; height: 3vh;">
-                <span style="font-size: 2vh;">PillNeko</span>
+            <div class="blank"></div>
+            <div id="me">
+                <img src="assets/avatar.png" width="100" height="100">
+                <div id="me-info">
+                    <span id="nick" class="text-normal">PillNeko_药丸猫</span>
+                    <span id="sigu" class="text-alt">一名业余绘画爱好者</span>
+                </div>
             </div>
+            <div id="socals">
+                <h2 align="center">我的社交帐号</h2>
+                <div id="s-con">
+                    
+                </div>
+            </div>
+            <div id="about-me" class="card">
+                <div class="card-title">
+                    <span>自设设定</span>
+                </div>
+                <div class="card-content">
+                    <div id="msul">
+                        <div id="img-me">
+                            <img src="data/me_settings/me.png" >
+                        </div>
+                        <div id="sets" style="display: flex;">
+                            <ul>
+                                <li id="name"></li>
+                                <li id="gender"></li>
+                                <li id="age"></li>
+                                <li id="nature"></li>
+                                <li id="fav_food"></li>
+                                <li id="excel"></li>
+                                <li id="height"></li>
+                                <li id="weight"></li>
+                                <li id="background"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="text-alt">其他内容尽情期待~</span>
+            <div class="blank"></div>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
+    <template id="socal-card-template">
+        <div class="socals">
+            <img src="" width="70" height="70">
+            <div>
+                <span class="text-normal plat"></span>
+                <br>
+                <span class="text-alt id"></span>
+            </div>
+        </div>
+    </template>
 </body>
+<script type="module" src="script.js"></script> 
 </html>

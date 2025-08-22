@@ -1,0 +1,21 @@
+.socals {
+    width: 300px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: 0px 0px 10px var(--card-border);
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    .plat {
+        font-size: 1.3rem;
+        position: relative;
+        left: 10px;
+        top: 13px;
+    }
+    .id {
+        font-size: 1rem;
+        position: relative;
+        left: 10px;
+        top: 11px;
+    }
+}
