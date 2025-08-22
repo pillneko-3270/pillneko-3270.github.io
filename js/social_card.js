@@ -1,4 +1,4 @@
-export class SocalCard extends HTMLElement {
+export class SocialCard extends HTMLElement {
     constructor() {
         super()
 
@@ -6,7 +6,7 @@ export class SocalCard extends HTMLElement {
 
         shadow.innerHTML = `
             <style>
-            .socals {
+            .socials {
                 width: 300px;
                 background-color: var(--card-bg);
                 border: 1px solid var(--card-border);
@@ -48,7 +48,7 @@ export class SocalCard extends HTMLElement {
             </style>
         `
 
-        const template = document.getElementById("socal-card-template")
+        const template = document.getElementById("social-card-template")
         const content = template.content.cloneNode(true)
         content.querySelector("img").setAttribute("src", this.getAttribute("icon"))
         content.querySelector(".plat").innerText = this.getAttribute("plat")
@@ -56,7 +56,7 @@ export class SocalCard extends HTMLElement {
 
         shadow.appendChild(content)
 
-        shadow.querySelector(".socals").addEventListener("click", () => {
+        shadow.querySelector(".socials").addEventListener("click", () => {
             window.location.href = this.getAttribute("url")
         })
     }

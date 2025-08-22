@@ -1,12 +1,12 @@
 import { type } from "./js/header.js"
 import { load_me } from "./js/me_sets.js"
-import { SocalCard } from "./js/socal_card.js"
-import { load_socals } from "./js/socals.js"
+import { SocialCard } from "./js/social_card.js"
+import { load_socials } from "./js/socials.js"
 
-window.customElements.define("socal-card", SocalCard)
+window.customElements.define("social-card", SocialCard)
 
 window.onload = async () => {
     type()
     load_me()
-    load_socals()
+    load_socials()
 }
